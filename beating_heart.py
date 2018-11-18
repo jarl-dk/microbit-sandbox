@@ -13,6 +13,6 @@ while True:
     if(button_a.is_pressed()):
         fract = (steps/2-abs(i-steps/2))/(steps/2)
     else:
-        fract = 0.5+0.5*math.cos(i*2*math.pi/steps)
+        fract = 0.5+0.5*-math.cos(i*2*math.pi/steps)
     show_image(fract)
     i = (i+1) % steps
